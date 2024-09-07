@@ -1,5 +1,4 @@
-alphabet=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p',
-          'q','r','s','t','u','v','w','x','y','z']
+alphabet=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 def encryption(plain_text,shift_key):
     cipher_text=""
     for char in plain_text.lower():
@@ -19,10 +18,8 @@ def decryption(plain_text,shift_key):
             cipher_text+=alphabet[new]
         else:
             cipher_text+=char
-    print("Encrypted text:",cipher_text)
-    
+    print("Encrypted text:",cipher_text)    
 operation=input("Encrypt or Decrypt:")
-
 if operation=="Encrypt":
     text=input("Enter the message:")
     shift=int(input("Enter the shift key:"))
