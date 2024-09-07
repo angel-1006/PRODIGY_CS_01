@@ -21,7 +21,7 @@ def decryption(plain_text,shift_key):
             cipher_text+=char
     print("Encrypted text:",cipher_text)
     
-operation=input("Encrypt or Decrypt:\n")
+operation=input("Encrypt or Decrypt:")
 
 if operation=="Encrypt":
     text=input("Enter the message:")
